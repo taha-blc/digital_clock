@@ -63,11 +63,11 @@ box-shadow: 0px 0px 45px 16px rgba(50, 74, 243, 1);
 }
 
 #saat::after{
-    content: 'Hours';
+    content: 'HOUR';
 }
 #dakka::after{
-    content: 'min';
+    content: 'MINUTE';
 }
 #saniye::after{
-    content: 'Hours';
+    content: 'SECOND';
 }
