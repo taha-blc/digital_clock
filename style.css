@@ -1,0 +1,73 @@
+*{
+    margin: 0;
+    padding: 0;
+    /* font-family: ; */
+    box-sizing: border-box;
+}
+
+body{
+    height: 100vh;
+}
+
+.hero{
+    width: 100%;
+    height: 100%;
+    /* background: linear-gradient(45deg,#08001f,#30197d); */
+    background-image: url(arkaplan.jpg);
+    background-repeat:no-repeat ;
+    background-position: center;
+    background-size: fixed;
+    background-size: cover;
+    color: rgb(220, 232, 232);
+    /* position: relative; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container{
+    width: 800px;
+    height: 180px;
+    position: relative;
+    /* background: red; */
+    /* z-index: 1; */
+    -webkit-box-shadow: 0px 0px 45px 16px rgba(50, 74, 243, 1);
+-moz-box-shadow: 0px 0px 45px 16px rgba(50, 74, 243, 1);
+box-shadow: 0px 0px 45px 16px rgba(50, 74, 243, 1);
+}
+
+.clock{
+    width: 100%;
+    height: 100%;
+    background: rgb(235, 0, 255 , 0.11);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    backdrop-filter: blur(42px);
+    
+}
+.clock span{
+    font-size: 80px;
+    width: 110px;
+    display: inline-block;
+    text-align: center;
+    position: relative;
+}
+
+.clock span::after{
+    font-size: 16px;
+    position: absolute;
+    bottom: -15px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+#saat::after{
+    content: 'Hours';
+}
+#dakka::after{
+    content: 'min';
+}
+#saniye::after{
+    content: 'Hours';
+}
