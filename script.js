@@ -17,21 +17,21 @@ setInterval(() => {
     if (a < 10) {
         saat.innerHTML = "0" + currentTime.getHours()
     }
-    if (a > 10) {
+    if (a >= 10) {
         saat.innerHTML = currentTime.getHours()
     }
     /**dakika */
     if (b < 10) {
         dakka.innerHTML = "0" + currentTime.getMinutes()
     }
-    if (b > 10) {
+    if (b >= 10) {
         dakka.innerHTML = currentTime.getMinutes()
     }
     /*saniye */
     if (c < 10) {
         saniye.innerHTML = "0" + currentTime.getSeconds()
     }
-    if (c > 10) {
+    if (c >= 10) {
         saniye.innerHTML = currentTime.getSeconds()
     }
 
